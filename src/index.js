@@ -10,6 +10,10 @@ import __DO_NOT_USE__ActionTypes from './utils/actionTypes'
  * This is a dummy function to check if the function name has been altered by minification.
  * If the function has been minified and NODE_ENV !== 'production', warn the user.
  */
+/**
+ * 这个函数并不会被执行。仅用于判断redux是否被压缩。被压缩后的代码，函数名后被替换成无含义的字母，因此
+ * isCrushed.name !== 'isCrushed' 成立。防止用户在开发环境使用压缩后的redux版本。
+ */
 function isCrushed() {}
 
 if (
