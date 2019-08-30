@@ -35,7 +35,7 @@ import isPlainObject from './utils/isPlainObject'
  * time travel, persistence, etc. The only store enhancer that ships with Redux
  * is `applyMiddleware()`.
  * enhancer指代仓库增强器/强化剂。你可以选择性地列出它来给与仓库第三方的强化功能，比如中间件、
- * 时间旅行、持久化等等。唯一由Redux自身给出的仓库强化剂是 `applyMiddleware()`。
+ * 时间旅行、持久化等等。唯一由Redux自身给出的仓库强化剂是由 `applyMiddleware()` 产生的。
  *
  * @returns {Store} A Redux store that lets you read the state, dispatch actions
  * and subscribe to changes.
